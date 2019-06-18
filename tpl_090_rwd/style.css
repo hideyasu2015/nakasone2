@@ -724,3 +724,8 @@ section header h1{
 .container{
 	margin:80px; 
 }
+
+
+.contentsWrap{
+	text-align: center;
+}

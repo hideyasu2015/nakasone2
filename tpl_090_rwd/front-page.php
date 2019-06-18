@@ -72,7 +72,7 @@ I am making a soup from the morning. In the afternoon, delicious, rice noodles c
 
 
 
-  <?php query_posts('post_type=post'); ?>
+  <?php query_posts('post_type=menu'); ?>
   <?php get_template_part('top_loop'); ?>
     
   <?php wp_reset_query(); ?>

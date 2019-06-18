@@ -4,6 +4,7 @@ if ( have_posts() ) :
 ?>
 <section id="post-<?php the_ID(); ?>" <?php post_class('menu'); ?>>
     <a href="<?php the_permalink() ?>">
+
         <div class="text">
             <h2 class="name"><?php the_title(); ?></h2>
             <p class="price"><?php echo number_format( get_field('price')); ?>b</p>
@@ -11,16 +12,17 @@ if ( have_posts() ) :
         </div>
         <figure>
         <?php if(has_post_thumbnail()): ?>
-            <a href="<?php the_permalink() ?>"><?php the_post_thumbnail( array( 100, 100 ) ); ?></a>
+            <a href="<?php the_permalink() ?>"><?php the_post_thumbnail( array( 200, 200 ) ); ?></a>
         <?php else: ?>
-            <a href="<?php the_permalink() ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/common/noimage_100x100.png" height="100" width="100" alt=""></a>
+            <a href="<?php the_permalink() ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/noimage_100x100.png" height="100" width="100" alt=""></a>
         <?php endif; ?>
         </figure>
     </a>
-</section><!-- /.plan -->
+</section><!-- /.menu -->
 <?php 
     endwhile;
 endif; 
 ?>
+
 
 <?php if ( function_exists( 'wp_pagenavi' ) ) { wp_pagenavi(); } ?>

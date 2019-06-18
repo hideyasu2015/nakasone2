@@ -35,6 +35,7 @@ wp_head(); ?>
      <img src="http://parnee-noodle-shop.local/wp-content/themes/tpl_090_rwd/images/shop.png"   alt="..."　>
     </div>
   <?php endif; ?>
+  
   	<!-- <p id="logo">
     <?php //if (function_exists('the_custom_logo')):?>
     	<?php //the_custom_logo();?>
@@ -42,6 +43,7 @@ wp_head(); ?>
   		<a href="<?php //echo esc_url( home_url( '/' ) ); ?>" title="<?php //echo esc_attr( get_bloginfo('name', 'display')); ?>" rel="home"><?php //echo esc_attr( get_bloginfo('name', 'display'))?></a>
     <?php //endif;?>
     </p> -->
+
  <nav id="mainnav">
       <p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
       <div class="panel">
