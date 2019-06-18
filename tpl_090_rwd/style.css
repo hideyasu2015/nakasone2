@@ -134,6 +134,7 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hove
 #mainnav a{
 	color: #000;
 	font-family: 'Noto Sans JP', serif;
+
 }
 
 #mainImg img{
@@ -246,10 +247,10 @@ img{
 
 /*ABOUT US
 ------------------------------------------------------------*/
-.about{
+/*.about{
 	margin-top: 50px;
 	
-}
+}*/
 
 /* ページ・投稿
 ------------------------------------------------------------*/
@@ -486,7 +487,7 @@ section header h1{
 	}
 	.panel{
 		display:block !important;
-		padding-bottom: 50px;
+		padding-bottom: 0px;
 		padding-top: 50px;
 	}
 	#mainnav li{
@@ -720,10 +721,6 @@ section header h1{
         height: 300px;
       }
 
-/*card-deck*/
-
-.card-deck{
-        margin: : 50px;
-        
+.container{
+	margin:80px; 
 }
-
