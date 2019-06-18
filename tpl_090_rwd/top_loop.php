@@ -1,3 +1,6 @@
+<div class="container">
+
+
 <?php if (have_posts()): ?>
 <div class="card-deck">
 <?php while (have_posts()): the_post();?>
@@ -17,3 +20,5 @@
 <p>該当する投稿は見つかりませんでした。</p>
 </div>
 <?php endif;?>
+
+</div>
