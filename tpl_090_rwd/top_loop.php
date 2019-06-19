@@ -5,7 +5,8 @@
 <div class="card-deck">
 <?php while (have_posts()): the_post();?>
 <div class="card"　>
-<div class="card-img-top"><?php echo get_the_post_thumbnail($page->ID, 'thumbnail'); ?>
+<div class="card-img-top"><?php echo get_the_post_thumbnail($page->ID, ' medium'); ?>
+<!-- <?php //var_dump(the_post());?> -->
 </div>
 <div class="card-body">
 <h5 class="card-title"><?php the_title();?></h5>
