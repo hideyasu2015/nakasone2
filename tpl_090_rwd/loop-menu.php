@@ -1,28 +1,32 @@
-<?php 
-if ( have_posts() ) :
-    while ( have_posts() ) : the_post();
-?>
+<div class="container">
+
+
+<?php if (have_posts()): ?>
+<div class="card-deck">
+<?php while (have_posts()): the_post();?>
+
+
+
+<div class="card"　>
 <section id="post-<?php the_ID(); ?>" <?php post_class('menu'); ?>>
-    <a href="<?php the_permalink() ?>">
+  <a href="<?php the_permalink() ?>">
+<div class="card-img-top"><?php echo get_the_post_thumbnail($page->ID, ' medium'); ?>
+<!-- <?php //var_dump(the_post());?> -->
+</div>
+<div class="card-body">
+ <h5 class="card-title"><?php the_title();?></h5>
+ <p class="card-text"><?php the_excerpt();?></p>
+ <p class="card-text"><small class="text-muted"><?php echo number_format( get_field('price')); ?>b</small></p>
+</div>
+</div>
+<?php endwhile;?>
+</div>
+<?php else: ?>
+<div class="inner">
+ <p>該当する投稿は見つかりませんでした。</p>
+</div>
+<?php endif;?>
 
-        <div class="text">
-            <h2 class="name"><?php the_title(); ?></h2>
-            <p class="price"><?php echo number_format( get_field('price')); ?>b</p>
-            <p class="summary"><?php the_excerpt(); ?></p>
-        </div>
-        <figure>
-        <?php if(has_post_thumbnail()): ?>
-            <a href="<?php the_permalink() ?>"><?php the_post_thumbnail( array( 200, 200 ) ); ?></a>
-        <?php else: ?>
-            <a href="<?php the_permalink() ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/noimage_100x100.png" height="100" width="100" alt=""></a>
-        <?php endif; ?>
-        </figure>
-    </a>
-</section><!-- /.menu -->
-<?php 
-    endwhile;
-endif; 
-?>
-
+</div>
 
 <?php if ( function_exists( 'wp_pagenavi' ) ) { wp_pagenavi(); } ?>

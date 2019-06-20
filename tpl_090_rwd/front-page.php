@@ -54,7 +54,7 @@ if ($header_image):?>
   <div class="about">
   <div class="row">
     <div class="col-md-6">  
-      <h2>ABOUT US</h2>
+      <h1>ABOUT US</h1>
       <p>Tradition since 1889
 It is a shop of rice noodles with a reputation as very delicious. You surely will be satisfied. The second owner himself is making it with all my heart. It is cheap, tasty and popular. The location is difficult to understand. That's why it's OK.
 
@@ -81,6 +81,7 @@ I am making a soup from the morning. In the afternoon, delicious, rice noodles c
 <div class="container">
   <div class="row">
     <div class="col-md-6">  
+      <h1>ACCESS</h1>
       <P>Nong Hoi, Muang Thien Mai 50000 Thailand</P>
     </div>
     <div class="col-md-6">
