@@ -25,11 +25,12 @@
 <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet"　type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
   <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet"　type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
   <!-- Your custom styles (optional) -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet"　type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
+
 
 <?php 
 wp_enqueue_script('jquery');
