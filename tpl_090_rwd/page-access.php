@@ -1,28 +1,39 @@
+
+
+
 <?php get_header(); ?>
 
-    <div class="contentsWrap">
-        <div class="mainContents">
-             <?php 
-              if(have_posts() ):
-                while(have_posts() ) : the_post();
-            ?>
 
 
-            <article id="post-<?php the_ID(); ?>" <?php post_class('page'); ?>>
-                <h1 class="type-A"><?php the_title(); ?></h1>
-                <section class="content">
-                 <?php the_content(); ?>
-                </section>
-            </article><!-- /.page -->
-            <?php  
-           endwhile;
-          endif;
-          ?>
-        </div><!-- /.mainContents -->
+<div class="container">
+  
+  <div class="row">
 
-        <!-- <aside class="subContents">
-            <?php //get_sidebar(); ?>
-        </aside> --><!-- /.subContents -->
-        </div><!-- /.contentsWrap -->
+    <div class="col-md-6">  
+      <h1><?php the_title(); ?></h1>
+      <P>Nong Hoi, Muang Thien Mai 50000 Thailand</P>
+    </div>
+    <div class="col-md-6">
+      <div id="map"></div>
+    </div>
+    
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: {lat: 18.753481, lng: 99.020067}
+        });
+        var marker = new google.maps.Marker({
+              map: map,
+              position: {lat: 18.753481, lng: 99.020067}
+            });
+       }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWsZ4gHwTMP1gq7b-i94jKkih_lnlptGc&callback=initMap">
+    </script>
+    </div>
+  </div>
+</div>
 
 <?php get_footer(); ?>

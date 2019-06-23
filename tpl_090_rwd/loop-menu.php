@@ -16,7 +16,7 @@
 <div class="card-body">
  <h5 class="card-title"><?php the_title();?></h5>
  <p class="card-text"><?php the_excerpt();?></p>
- <p class="card-text"><small class="text-muted"><?php echo number_format( get_field('price')); ?>b</small></p>
+ <p class="card-text"><small class="text-muted"><?php echo number_format( get_field('price')); ?>B</small></p>
 </div>
 </div>
 <?php endwhile;?>

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="container">
     <div class="contentsWrap">
         <div class="mainContents">
              <?php 
@@ -8,7 +8,7 @@
             ?>
 
 
-            <article id="post-<?php the_ID(); ?>" <?php post_class('aboutus'); ?>>
+            <article id="post-<?php the_ID(); ?>" <?php post_class('page'); ?>>
                 <h1 class="type-A"><?php the_title(); ?></h1>
                 <section class="content">
                  <?php the_content(); ?>
@@ -24,5 +24,5 @@
             <?php //get_sidebar(); ?>
         </aside> --><!-- /.subContents -->
         </div><!-- /.contentsWrap -->
-
+</div>
 <?php get_footer(); ?>
