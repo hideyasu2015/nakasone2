@@ -30,7 +30,7 @@
   <!-- Bootstrap core CSS -->
   <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet" 　type="text/css">
   <!-- Material Design Bootstrap -->
-  <link href="<?php echo get_template_directory_uri(); ?>/css/mdb.min.css" type="text/css">
+  <link href="<?php echo get_template_directory_uri(); ?>/css/mdb.min.css" rel="stylesheet" type="text/css">
   <!-- Your custom styles (optional) -->
   <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css">
 
