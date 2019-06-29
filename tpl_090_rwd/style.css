@@ -134,7 +134,7 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hove
 #mainnav a{
 	color: #000;
 	font-family: 'Noto Sans JP', serif;
-
+    font-size: 30px;
 }
 
 #mainImg img{
@@ -722,7 +722,8 @@ section header h1{
       }
 
 .container{
-	margin:80px; 
+	margin: auto; 
+	padding: 30px;
 }
 
 
@@ -752,4 +753,38 @@ section header h1{
   color: #fff;
   font-size: 30px;
   line-height: 1.5;
+}
+
+
+.menu_title{
+    max-width: 13.75em;
+    margin: 0 3.125em .625em 0;
+    padding: .125em 0;
+    color: #000;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.main_menu{
+	padding-top: 20px;
+	font-size: 3em;
+	text-align: center;
+}
+
+.title{
+	text-align: left;
+}
+
+dl{
+	font-size: 20px;
+}
+
+h3{
+	padding-top:20px; 
+	text-align: center;
+}
+
+.postNavi{
+	font-size: 20px;
 }
