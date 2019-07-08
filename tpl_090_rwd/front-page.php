@@ -53,30 +53,40 @@ if ($header_image):?>
 	<?php //endif; ?> -->
 
 <div class="container">
-    <div class="about">
-        <div class="row">
-            <div class="col-md-6">
-                <h1>ABOUT US</h1>
-                <p>Tradition since 1889
-                    It is a shop of rice noodles with a reputation as very delicious. You surely will be satisfied. The
-                    second owner himself is making it with all my heart. It is cheap, tasty and popular. The location is
-                    difficult to understand. That's why it's OK.
+    <!--Grid row-->
+    <div class="row">
+        <!--Grid column-->
+        <div class="col-md-4 mb-3">
+            <div class="view overlay z-depth-1-half">
+                <img src="http://parnee-noodle-shop.local/wp-content/themes/tpl_090_rwd/images/gm.png"
+                    class="card-img-top" alt="grandmather">
+                <div class="mask rgba-white-light"></div>
+            </div>
 
-                    I am making a soup from the morning. In the afternoon, delicious, rice noodles can be eaten. It is
-                    open from 11:00 to 16:00.</p>
-            </div>
-            <div class="col-md-6">
-                <div class="photo">
-                    <img src="http://parnee-noodle-shop.local/wp-content/themes/tpl_090_rwd/images/gm.png"
-                        class="d-block　w-100" alt="grandmather" 　>
-                </div>
-            </div>
         </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-8 mb-9">
+            <i class="fas fa-seedling">
+                <h2>ABOUT US</h2>
+            </i>
+            <hr>
+            <p>Tradition since 1889
+                It is a shop of rice noodles with a reputation as very delicious. You surely will be satisfied. The
+                second owner himself is making it with all my heart. It is cheap, tasty and popular. The location is
+                difficult to understand. That's why it's OK.
+                I am making a soup from the morning. In the afternoon, delicious, rice noodles can be eaten.</p>
+            <p> It is open from 11:00 to 16:00.</p>
+            <a href="http://parnee-noodle-shop.local/aboutus/" class="btn btn-outline-success waves-effect">Read
+                More</a>
+
+        </div>
+        <!--Grid column-->
+
     </div>
+    <!--Grid row-->
 </div>
-
-
-
 
 <?php query_posts('post_type=menu'); ?>
 <?php get_template_part('top_loop'); ?>
@@ -87,7 +97,7 @@ if ($header_image):?>
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <h1>ACCESS</h1>
+            <h2>ACCESS</h2>
             <h3>Nong Hoi, Muang Thien Mai 50000 Thailand</h3>
         </div>
         <div class="col-md-6">
@@ -118,6 +128,7 @@ if ($header_image):?>
     </div>
 </div>
 </div>
+
 
 
 <?php get_footer(); ?>

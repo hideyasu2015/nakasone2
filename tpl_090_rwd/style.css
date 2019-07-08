@@ -218,7 +218,7 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hove
 
 /* 共通
 ------------------------------------------------------------*/
-h1, h2{
+h1,h2{
 	font-family: 'Noto Sans JP', serif;
 }
 
@@ -254,7 +254,7 @@ img{
 
 /* ページ・投稿
 ------------------------------------------------------------*/
-#singleImg{
+/* #singleImg{
 	text-align: center;
 	margin-bottom: 40px;
 }
@@ -262,9 +262,9 @@ img{
 #singleImg img{
 	width: 100%;
 	height: auto;
-}
+} */
 
-.header{
+/* .header{
 	width: 60%;
 	margin: 0 auto;
 	background: url(images/borderBlack.png) repeat-x 0 50%;
@@ -297,7 +297,7 @@ section header h1{
 .entry-footer span{
 	padding-right: 10px;
 }
-
+ */
 
 
 /* アーカイブ
@@ -487,8 +487,8 @@ section header h1{
 	}
 	.panel{
 		display:block !important;
-		padding-bottom: 0px;
-		padding-top: 50px;
+		padding-bottom: 28px;
+		padding-top: 26px;
 	}
 	#mainnav li{
 		display: inline-block;
@@ -935,4 +935,44 @@ h3{
 
 .timeline-body > p + p {
   margin-top: 5px;
+}
+
+
+.jumbotron-fluid {
+    position: relative;
+    height: 522px;
+    min-height: 100px;
+    background: url('images/noodleshop.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.jumbotron-container{
+    position: relative;
+    top: 90%;
+    transform: translateY(-50%);
+}
+
+h1.site-name {
+	font-family: 'Roboto',arial,sans-serif;
+	font-size: 70px;
+	font-weight: bold; 
+	color: #FFF;
+	text-shadow:  2px  2px 10px #222121 ,
+               -2px  2px 10px #222121 ,
+                2px -2px 10px #222121 ,
+               -2px -2px 10px #222121;
+}
+
+.lead{
+font-family: 'Roboto',arial,sans-serif;
+	font-size: 30px;
+	color: #FFF;
+	text-shadow:  2px  2px 10px #222121 ,
+               -2px  2px 10px #222121 ,
+                2px -2px 10px #222121 ,
+               -2px -2px 10px #222121;
+}
+
+.btn btn-default{
+	text-align: right;
 }
