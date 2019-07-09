@@ -15,6 +15,7 @@
             <div class="row">
                 <div class="col-md-1">
                 </div>
+                <!-- 左側 -->
                 <div class="col-md-5">
                     <div class="shadow p-3 mb-5 bg-white rounded">
                         <?php 

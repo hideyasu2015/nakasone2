@@ -39,38 +39,31 @@ if ($header_image):?>
     </div>
 </div>
 
-<!-- </div><?php //endif;?> -->
 
-<!-- 	<?php //if ( have_posts()) : the_post(); ?>
-  <section id="toppage">
-		<header class="header">
-			<h1 class="title"><span><?php //the_title(); ?></span></h1>
-		</header>
-    <div class="post innerS">
-      <?php //the_content();?>
-    </div>
-  </section>
-	<?php //endif; ?> -->
 
+
+<!--About us-->
 <div class="container">
     <!--Grid row-->
     <div class="row">
         <!--Grid column-->
         <div class="col-md-4 mb-3">
-            <div class="view overlay z-depth-1-half">
-                <img src="http://parnee-noodle-shop.local/wp-content/themes/tpl_090_rwd/images/gm.png"
-                    class="card-img-top" alt="grandmather">
-                <div class="mask rgba-white-light"></div>
+            <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                <img class="img-fluid" src="http://parnee-noodle-shop.local/wp-content/themes/tpl_090_rwd/images/gm.png"
+                    alt="grandmather">
+                <a>
+                    <div class="mask rgba-white-slight"></div>
+                </a>
             </div>
 
         </div>
-        <!--Grid column-->
+
 
         <!--Grid column-->
         <div class="col-md-8 mb-9">
-            <i class="fas fa-seedling">
-                <h2>ABOUT US</h2>
-            </i>
+            <i class="fas fa-seedling fa-2x" id="icon"></i>
+            <h2>ABOUT US</h2>
+
             <hr>
             <p>Tradition since 1889
                 It is a shop of rice noodles with a reputation as very delicious. You surely will be satisfied. The
@@ -78,7 +71,7 @@ if ($header_image):?>
                 difficult to understand. That's why it's OK.
                 I am making a soup from the morning. In the afternoon, delicious, rice noodles can be eaten.</p>
             <p> It is open from 11:00 to 16:00.</p>
-            <a href="http://parnee-noodle-shop.local/aboutus/" class="btn btn-outline-success waves-effect">Read
+            <a href="http://parnee-noodle-shop.local/aboutus/" class="btn btn-outline-cyan darken-2 waves-effect">Read
                 More</a>
 
         </div>
@@ -88,15 +81,18 @@ if ($header_image):?>
     <!--Grid row-->
 </div>
 
+
+<!--Menu-->
 <?php query_posts('post_type=menu'); ?>
 <?php get_template_part('top_loop'); ?>
 
 <?php wp_reset_query(); ?>
 
-
+<!--Access-->
 <div class="container">
     <div class="row">
         <div class="col-md-6">
+            <i class="fas fa-walking fa-2x" id="icon"></i>
             <h2>ACCESS</h2>
             <h3>Nong Hoi, Muang Thien Mai 50000 Thailand</h3>
         </div>

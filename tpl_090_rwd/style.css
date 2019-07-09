@@ -83,7 +83,7 @@ a:active, a:focus,input:active, input:focus{
 
 /* フォーム
 ------------------------------------------------------------*/
-input[type="text"], input[type="email"], textarea{
+/* input[type="text"], input[type="email"], textarea{
 	max-width: 90%;
 	height: 28px;
 	padding: 0 5px;
@@ -113,7 +113,7 @@ input[type="submit"], input[type="reset"], input[type="button"]{
 input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
 	cursor: pointer;
 	background: #777;
-}
+} */
 
 
 
@@ -231,7 +231,7 @@ img{
 	height: auto;
 }
 
-.inner{
+/* .inner{
 	width: 80%;
 	margin: 0 auto;
 	padding-bottom: 50px;
@@ -241,7 +241,7 @@ img{
 	width: 60%;
 	margin: 0 auto;
 	padding-bottom: 50px;
-}
+} */
 
 
 
@@ -560,7 +560,7 @@ section header h1{
 }*/
 
 
-/*@media only screen and (max-width: 799px){
+/* @media only screen and (max-width: 799px){
 	#header{
 		position: fixed;
 		width: 100%;
@@ -711,7 +711,7 @@ section header h1{
 		display: block;
 		margin: 10px auto;	
 	}
-}*/
+} */
 
 
 /*googlemap*/
@@ -964,7 +964,7 @@ h1.site-name {
 }
 
 .lead{
-font-family: 'Roboto',arial,sans-serif;
+    font-family: 'Roboto',arial,sans-serif;
 	font-size: 30px;
 	color: #FFF;
 	text-shadow:  2px  2px 10px #222121 ,
@@ -973,6 +973,17 @@ font-family: 'Roboto',arial,sans-serif;
                -2px -2px 10px #222121;
 }
 
-.btn btn-default{
-	text-align: right;
+.controls-top{
+	text-align: center;
+	margin-top:30px; 
+}
+
+.fa-green{
+	color: #0097a7;
+}
+
+#icon{
+	float: left;
+	padding-top:3px; 
+	padding-right: 10px;
 }
