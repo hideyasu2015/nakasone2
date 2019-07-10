@@ -65,11 +65,10 @@ if ($header_image):?>
             <h2>ABOUT US</h2>
 
             <hr>
-            <p>Tradition since 1889
-                It is a shop of rice noodles with a reputation as very delicious. You surely will be satisfied. The
-                second owner himself is making it with all my heart. It is cheap, tasty and popular. The location is
-                difficult to understand. That's why it's OK.
-                I am making a soup from the morning. In the afternoon, delicious, rice noodles can be eaten.</p>
+            <p>TWe are a traditional Noodle shop for
+                two generations.</p>
+            <p> Once eaten, it tastes delicious!! Enjoy yourself on the open terrace.
+            </p>
             <p> It is open from 11:00 to 16:00.</p>
             <a href="http://parnee-noodle-shop.local/aboutus/" class="btn btn-outline-cyan darken-2 waves-effect">Read
                 More</a>
