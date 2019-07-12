@@ -9,14 +9,6 @@
             </div><!-- /.plans -->
         </section><!-- /.planBlock -->
     </div><!-- /.mainContents -->
-
-    <!--  <aside class="subContents">
-        <?php //get_sidebar('beds'); ?>
-    </aside> -->
-    <!-- /.subContents -->
 </div><!-- /.contentsWrap -->
 
-<!-- <nav class="postNavi">
-    <span class="prev"><?php //previous_post_link('%link','PREV'); ?></span>
-    <span class="next"><?php //next_post_link('%link','NEXT'); ?></span> -->
 <?php get_footer(); ?>

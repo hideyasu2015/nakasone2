@@ -82,10 +82,9 @@ if ($header_image):?>
 
 
 <!--Menu-->
-<?php query_posts('post_type=menu'); ?>
 <?php get_template_part('top_loop'); ?>
 
-<?php wp_reset_query(); ?>
+<!-- <?php //wp_reset_query(); ?> -->
 
 <!--Access-->
 <div class="container">
