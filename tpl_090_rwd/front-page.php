@@ -84,7 +84,7 @@ if ($header_image):?>
 <!--Menu-->
 <?php get_template_part('top_loop'); ?>
 
-<!-- <?php //wp_reset_query(); ?> -->
+
 
 <!--Access-->
 <div class="container">
