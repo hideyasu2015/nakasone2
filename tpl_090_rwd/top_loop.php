@@ -1,5 +1,5 @@
 <?php $args = array(
-  'posts_per_page'   => 3,
+  'posts_per_page'   => 5,
   'offset'           => 0,
   'category'         => '',
   'category_name'    => '',
@@ -53,24 +53,12 @@ wp_reset_postdata();?>
         <p>NO IMAGE</p>
     </div>
     <?php endif;?>
+</div>
 
 
+<!-- <a href="http://parnee-noodle-shop.local/menu/" class="btn btn-outline-cyan darken-2 waves-effect">More</a> -->
 
-    <!-- <a href="http://parnee-noodle-shop.local/menu/" class="btn btn-outline-cyan darken-2 waves-effect">More</a> -->
-
-    <div class="controls-top">
+<!-- <div class="controls-top">
         <a class="btn-floating" href="#" data-slide="prev"><i class="fas fa-chevron-circle-left fa-3x fa-green"></i></a>
         <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
-                class="fas fa-chevron-circle-right fa-3x fa-green"></i></a>
-
-
-
-        <!-- Indicators
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-example-multi" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-multi" data-slide-to="1"></li>
-
-    </ol>
-    /.Indicators-->
-
-    </div>
+                class="fas fa-chevron-circle-right fa-3x fa-green"></i></a> -->

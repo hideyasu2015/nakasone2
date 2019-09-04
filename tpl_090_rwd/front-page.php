@@ -16,8 +16,8 @@ if ($header_image):?>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="http://parnee-noodle-shop.local/wp-content/themes/tpl_090_rwd/images/noodle.png"
-                        class="d-block w-100" alt="...">
+                    <img src="<?php bloginfo('template_directory'); ?>/images/noodle.png" class="d-block w-100"
+                        alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="<?php bloginfo('template_directory'); ?>/images/noodle1.png" class="d-block w-100"
@@ -49,8 +49,7 @@ if ($header_image):?>
         <!--Grid column-->
         <div class="col-md-4 mb-3">
             <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-                <img class="img-fluid" src="http://parnee-noodle-shop.local/wp-content/themes/tpl_090_rwd/images/gm.png"
-                    alt="grandmather">
+                <img class="img-fluid" src="<?php bloginfo('template_directory'); ?>/images/gm.png" alt="grandmather">
                 <a>
                     <div class="mask rgba-white-slight"></div>
                 </a>
@@ -63,15 +62,16 @@ if ($header_image):?>
         <div class="col-md-8 mb-9">
             <i class="fas fa-seedling fa-2x" id="icon"></i>
             <h2>ABOUT US</h2>
-
-            <hr>
-            <p>TWe are a traditional Noodle shop for
+            <p>We are a traditional Noodle shop for
                 two generations.</p>
-            <p> Once eaten, it tastes delicious!! Enjoy yourself on the open terrace.
-            </p>
-            <p> It is open from 11:00 to 16:00.</p>
-            <a href="http://parnee-noodle-shop.local/aboutus/" class="btn btn-outline-cyan darken-2 waves-effect">Read
-                More</a>
+            <p>Once eaten, it tastes delicious!! Enjoy yourself on the open terrace.</p>
+            <p>Pad Thai is a noodle dish loved by Thai people, from adults to children. Pad Thai with peanuts is a
+                typical Thai dish that is fried with chicken, dried shrimp, deep-fried chicken, sprouts and other
+                ingredients, seasoned with nampula, sugar, tamarind, etc. . Thai people eat this pad Thai like a snack
+                or snack.</p>
+            <h3>It is open from 11:00 to 16:00.</h3>
+            <a href="http://parnee-noodle-shop.local/aboutus/"><button type="button" class="btn btn-light-green">Read
+                    More</button></a>
 
         </div>
         <!--Grid column-->
@@ -121,7 +121,7 @@ if ($header_image):?>
         </script>
     </div>
 </div>
-</div>
+
 
 
 

@@ -207,12 +207,12 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hove
 
 /* フッター
 ------------------------------------------------------------*/
-/*#footer{
+#footer{
 	clear: both;
 	padding: 50px 10px 50px 0;
 	text-align: center;
 	font-size: 90%;
-}*/
+}
 
 
 
@@ -220,6 +220,17 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hove
 ------------------------------------------------------------*/
 h1,h2{
 	font-family: 'Noto Sans JP', serif;
+}
+h2{
+ position: relative;
+  padding: 0.25em 0;
+}
+h2:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -webkit-linear-gradient(to right, rgb(130, 201, 116), transparent);
+  background: linear-gradient(to right, rgb(130, 201, 116), transparent);
 }
 
 h3{
@@ -717,7 +728,7 @@ section header h1{
 /*googlemap*/
 
  #map {
-      	width: 400px;
+      	width: 500px;
         height: 300px;
       }
 
@@ -733,15 +744,15 @@ section header h1{
 
 .card {
   width: 80%;
-  margin: 35px 0px;
+  margin-top: 30px;
   background: #fff;
   border-radius: 5px;
-  box-shadow: 0 2px 5px #ccc;
+  box-shadow: 0 3px 10px #ccc;
 }
 .card-img-top {
-  border-radius: 5px;
-  max-width: auto;
-  height: auto;
+  border-radius:10px;
+  /* max-width: auto;
+  height: auto; */
 }
 
 .card-title {
@@ -758,32 +769,39 @@ section header h1{
 
 
 .menu_title{
+	text-align: center;
     max-width: 13.75em;
-    margin: 0 3.125em .625em 0;
-    padding: .125em 0;
+    margin: 0;
+    padding: 0;
     color: #000;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 100;
     font-size: 2em;
 }
 
 .main_menu{
-	padding-top: 20px;
+	padding-top: 0;
 	font-size: 3em;
 	text-align: center;
 }
 
-.title{
+/*.title{
 	text-align: left;
 }
+*/
+dt{
+	font-weight: 200;
+	font-size: 20px;
+}
 
-dl{
+dd{
+	font-weight: 500;
 	font-size: 20px;
 }
 
 h3{
 	padding-top:20px; 
-	text-align: center;
+	text-align: left;
 }
 
 .postNavi{
@@ -995,8 +1013,17 @@ h1.site-name {
 	padding-left: 35px;
 }
 
+
+
 .btn {
 	position: relative;
-	top: 155px;
-  /* left: 10px; */
+	top: 75px;
+	left: 10px;
+	margin-left: 550px;
 }
+
+.fas{
+	margin-top: 10px;
+}
+
+

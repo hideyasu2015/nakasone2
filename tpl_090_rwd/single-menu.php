@@ -37,17 +37,19 @@
 
                 <!-- 右側 -->
                 <div class="col-md-5">
-                    　　<h1 class="menu_title"><?php the_title(); ?></h1>
+                    <div class="menu_title" >
+                         <h1><?php the_title(); ?></h1>
                     <?php the_content(); ?>
-                    <dl>
-                        <dt>PRICE</dt>
+                      <dl>
+                        <dt>- PRICE -</dt>
                         <dd><em><?php echo number_format( get_field( 'price' ) ); ?>B</em></dd>
-                        　　
-                    </dl>
+                         　　
+                      </dl>
                     　　 <dl>
-                        <dt>COMMENT</dt>
+                        <dt>- COMMENT -</dt>
                         <dd><?php echo get_field( 'comment' ); ?></dd>
-                    </dl>
+                      </dl>
+                    </div>
                 </div>
                 <div class="col-md-1">
                 </div>
@@ -73,12 +75,12 @@
         <div class="row">
             <div class="col-md-1">
             </div>
-            <div class="col-md-5">
+            <div class="col-md-7">
                 <span class="prev"><?php previous_post_link();?></span>
             </div>
             <div class="col-md-1">
             </div>
-            <div class="col-md-5">
+            <div class="col-md-3">
                 <span class="next"><?php next_post_link();?></span>
             </div>
         </div>
