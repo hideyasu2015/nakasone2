@@ -30,8 +30,7 @@ $posts_array = get_posts( $args ); ?>
             <div class="card">
                 <section id="post-<?php the_ID(); ?>" <?php post_class('menu'); ?>>
                     <a href="<?php the_permalink() ?>">
-                        <div class="card-img-top"><?php echo get_the_post_thumbnail($page->ID, 'medium'); ?>
-                            <!-- <?php //var_dump(the_post());?> -->
+                        <div class="card-img-top"><?php echo get_the_post_thumbnail($page->ID, 'full'); ?>
                         </div>
 
                         <div class="card-body">
@@ -54,11 +53,3 @@ wp_reset_postdata();?>
     </div>
     <?php endif;?>
 </div>
-
-
-<!-- <a href="http://parnee-noodle-shop.local/menu/" class="btn btn-outline-cyan darken-2 waves-effect">More</a> -->
-
-<!-- <div class="controls-top">
-        <a class="btn-floating" href="#" data-slide="prev"><i class="fas fa-chevron-circle-left fa-3x fa-green"></i></a>
-        <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
-                class="fas fa-chevron-circle-right fa-3x fa-green"></i></a> -->

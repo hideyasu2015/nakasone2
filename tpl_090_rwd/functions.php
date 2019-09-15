@@ -27,21 +27,24 @@ register_nav_menus( array(
 /*	Register sidebars
 /*---------------------------------------------------------*/
 register_sidebar(array(
-	'name' => __('widgetLeft'),
+  'name' => __('widgetLeft'),
+  'id’ => ‘sidebar-1',
   'before_widget' => '<div id="%1$s" class="widget %2$s">',
   'after_widget' => '</div>',
   'before_title' => '<h3>',
   'after_title' => '</h3>',
 ));
 register_sidebar(array(
-	'name' => __('widgetCenter'),
+  'name' => __('widgetCenter'),
+  'id’ => ‘sidebar-2',
   'before_widget' => '<div id="%1$s" class="widget %2$s">',
   'after_widget' => '</div>',
   'before_title' => '<h3>',
   'after_title' => '</h3>',
 ));
 register_sidebar(array(
-	'name' => __('widgetRight'),
+  'name' => __('widgetRight'),
+  'id’ => ‘sidebar-3',
   'before_widget' => '<div id="%1$s" class="widget %2$s">',
   'after_widget' => '</div>',
   'before_title' => '<h3>',
@@ -150,10 +153,3 @@ if(!function_exists('_log')){
 }
 
 ?>
-
-
-
-
-
-
-

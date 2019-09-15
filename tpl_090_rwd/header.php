@@ -15,7 +15,7 @@
 	if ( $paged >= 2 || $page >= 2 )
 		echo ' | ' . sprintf( __( 'Page %s', 'tpl_090_rwd' ), max( $paged, $page ) );
 	?></title>
-    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -41,7 +41,7 @@ wp_head(); ?>
 </head>
 
 <body>
-    <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <header id="header" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
         <div id="headerWrap">
             <?php if(is_home()):?>
             <div class="jumbotron jumbotron-fluid">
@@ -52,18 +52,24 @@ wp_head(); ?>
             </div>
             <?php endif; ?>
 
-            <!-- <p id="logo">
-    <?php //if (function_exists('the_custom_logo')):?>
-    	<?php //the_custom_logo();?>
-    <?php //else:?>
-  		<a href="<?php //echo esc_url( home_url( '/' ) ); ?>" title="<?php //echo esc_attr( get_bloginfo('name', 'display')); ?>" rel="home"><?php //echo esc_attr( get_bloginfo('name', 'display'))?></a>
-    <?php //endif;?>
-    </p> -->
+            <!-- globalNavi -->
+            <div class="container">
+                <nav class="globalNavi navbar-expand-sm navbar-light">
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <nav id="mainnav">
-                <p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
-                <div class="panel">
-                    <?php wp_nav_menu(array('theme_location' => 'primary'));?>
-                </div>
-            </nav>
+                    <div id="menu" class="collapse navbar-collapse">
+                        <?php 
+                        $args=array(
+                            'menu'=>'global-navigation',
+                            'container'=>false,
+                        );
+                        wp_nav_menu($args);
+                        ?>
+                    </div>
+                </nav>
+            </div>
+
+
     </header>

@@ -8,7 +8,7 @@
               while ( have_posts() ) : the_post();
            ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class('page'); ?>>
-        <h2 class="main_menu">MENU</h2>
+        <h1 class="main_menu">MENU</h1>
 
         <!-- ここからGRID -->
         <div class="container">
@@ -37,18 +37,18 @@
 
                 <!-- 右側 -->
                 <div class="col-md-5">
-                    <div class="menu_title" >
-                         <h1><?php the_title(); ?></h1>
-                    <?php the_content(); ?>
-                      <dl>
-                        <dt>- PRICE -</dt>
-                        <dd><em><?php echo number_format( get_field( 'price' ) ); ?>B</em></dd>
-                         　　
-                      </dl>
-                    　　 <dl>
-                        <dt>- COMMENT -</dt>
-                        <dd><?php echo get_field( 'comment' ); ?></dd>
-                      </dl>
+                    <div class="menu_title">
+                        <h1><?php the_title(); ?></h1>
+                        <?php the_content(); ?>
+                        <dl>
+                            <dt>- PRICE -</dt>
+                            <dd><em><?php echo number_format( get_field( 'price' ) ); ?>B</em></dd>
+                            　　
+                        </dl>
+                        　　 <dl>
+                            <dt>- COMMENT -</dt>
+                            <dd><?php echo get_field( 'comment' ); ?></dd>
+                        </dl>
                     </div>
                 </div>
                 <div class="col-md-1">
