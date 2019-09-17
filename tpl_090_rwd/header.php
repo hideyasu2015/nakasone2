@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description"
+    <meta name="viewport" content="width=device-width,initial=1.0"">
+    <meta name=" description"
         content="<?php echo trim(wp_title('', false)); if(wp_title('', false)) { echo ' - '; } bloginfo('description'); ?>">
     <title><?php global $page, $paged;
   wp_title( '|', true, 'right' );
@@ -42,6 +42,7 @@ wp_head(); ?>
 
 <body>
     <header id="header" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+
         <div id="headerWrap">
             <?php if(is_home()):?>
             <div class="jumbotron jumbotron-fluid">
@@ -70,6 +71,5 @@ wp_head(); ?>
                     </div>
                 </nav>
             </div>
-
 
     </header>

@@ -3,7 +3,7 @@
 <div class="contentsWrap">
     <div class="mainContents">
         <section class="planBlock block">
-            <h2 class="main_menu">MENU</h2>
+            <h1 class="main_menu">MENU</h1>
             <div class="menus">
                 <?php get_template_part('loop','menu'); ?>
             </div><!-- /.plans -->
