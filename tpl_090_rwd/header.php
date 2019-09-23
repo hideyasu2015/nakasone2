@@ -53,23 +53,24 @@ wp_head(); ?>
             </div>
             <?php endif; ?>
 
-            <!-- globalNavi -->
-            <div class="container">
-                <nav class="globalNavi navbar-expand-sm navbar-light">
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        </div>
 
-                    <div id="menu" class="collapse navbar-collapse">
-                        <?php 
+        <!-- globalNavi -->
+        <nav class="navbar  navbar-expand-sm navbar-dark  light-green">
+            <!-- <a class="navbar-brand" href="http://parnee-noodle-shop.local/">HOME</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse justify-content-center navbar-collapse " id="navbarNav">
+                <?php 
                         $args=array(
                             'menu'=>'global-navigation',
                             'container'=>false,
                         );
                         wp_nav_menu($args);
                         ?>
-                    </div>
-                </nav>
             </div>
+        </nav>
 
     </header>
