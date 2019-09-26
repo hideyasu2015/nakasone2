@@ -12,15 +12,15 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="<?php bloginfo('template_directory'); ?>/images/noodle.png" class="d-block w-100"
+                    <img src="<?php bloginfo('template_directory'); ?>/images/noodle.jpg" class="d-block w-100"
                         alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="<?php bloginfo('template_directory'); ?>/images/noodle1.png" class="d-block w-100"
+                    <img src="<?php bloginfo('template_directory'); ?>/images/noodle1.jpg" class="d-block w-100"
                         alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="<?php bloginfo('template_directory'); ?>/images/begi.png" class="d-block w-100" alt="...">
+                    <img src="<?php bloginfo('template_directory'); ?>/images/vege.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -45,7 +45,7 @@
         <!--Grid column-->
         <div class="col-md-4 mb-3">
             <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-                <img class="img-fluid" src="<?php bloginfo('template_directory'); ?>/images/gm.png" alt="grandmather">
+                <img class="img-fluid" src="<?php bloginfo('template_directory'); ?>/images/gm.jpg" alt="grandmather">
                 <a>
                     <div class="mask rgba-white-slight"></div>
                 </a>
@@ -84,16 +84,14 @@
 
 <!--Access-->
 <div class="container">
+    <i class="fas fa-walking fa-2x" id="icon"></i>
+    <h2>ACCESS</h2>
     <div class="row">
         <div class="col-md-6">
-            <i class="fas fa-walking fa-2x" id="icon"></i>
-            <h2>ACCESS</h2>
             <h3>Nong Hoi, Muang Thien Mai 50000 Thailand</h3>
         </div>
         <div class="col-md-6">
             <div id="map"></div>
-
-
             <script>
             function initMap() {
                 var map = new google.maps.Map(document.getElementById('map'), {

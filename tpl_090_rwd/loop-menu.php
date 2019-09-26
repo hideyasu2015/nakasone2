@@ -28,20 +28,14 @@ $posts_array = get_posts( $args ); ?>
         <?php foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
         <div class="col-md-4">
             <div class="card">
-                <section id="post-<?php the_ID(); ?>" <?php post_class('menu'); ?>>
-                    <a href="<?php the_permalink() ?>">
-                        <div class="card-img-top"><?php echo get_the_post_thumbnail($page->ID, 'medium'); ?>
-                            <!-- <?php //var_dump(the_post());?> -->
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title"><?php the_title();?></h5>
-                            <p class="card-text">
-                                <h4 class="text-muted"><?php echo number_format( get_field('price')); ?>b</h4>
-                            </p>
-                        </div>
-                    </a>
-                </section>
+                <div class="card-img-top"><?php echo get_the_post_thumbnail($page->ID, 'medium'); ?>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"><?php the_title();?></h5>
+                    <p class="card-text text-muted">
+                        <h4><?php echo number_format( get_field('price')); ?>b</h4>
+                    </p>
+                </div>
             </div>
         </div>
         <?php endforeach;
@@ -53,3 +47,6 @@ wp_reset_postdata();?>
         <p>NO IMAGE</p>
     </div>
     <?php endif;?>
+
+    <!-- <img src=<section id="post-<?php the_ID(); ?>" <?php post_class('menu'); ?>>
+                <a href="<?php the_permalink() ?>"> -->

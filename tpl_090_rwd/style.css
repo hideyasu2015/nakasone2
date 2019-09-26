@@ -148,7 +148,7 @@ input:focus {
   color: #000;
   font-family: "Noto Sans JP", serif;
   font-size: 40px;
-} 
+}  */
 
 /* .globalNavi ul {
   display: flex;
@@ -210,36 +210,38 @@ img {
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
 
+@media only screen and (max-width: 2500px) {
 
-@media only screen and (max-width: 1400px) {
-  /* さわらない  */
-
-  /* #menu {
+  .menu {
     display: flex;
     justify-content: space-around;
     max-width: 100%;
-  } */
-
+  }
+ /* .menu a{
+   font-size: 3em;
+   margin-left: 2em;
+ } */
   /* 
   .globalNavi ul li a {
     display: block;
     box-sizing: border-box;
-    padding: 6px 30px;
+    align-items: stretch;
     color: #000;
     font-family: "Noto Sans JP", serif;
     font-size: 30px;
   } */
 
-  
-
   @media only screen and (min-width: 769px) {
-    /* #menu {
+    .menu {
       display: flex;
       justify-content: space-around;
       max-width: 100%;
-    }  */
-   
-  
+    }
+
+     /* .menu a{
+   font-size: 2em;
+   margin-left: 1em;
+ } */
     /* #navbarNav ul li a {
     display: flex;
     justify-content: space-around;
@@ -249,66 +251,66 @@ img {
     font-size: 10px;
   } */
 
-  /* .navbar-toggler {
+    /* .navbar-toggler {
     margin-top: 10px;
   } */
-}
+  }
 
-/*googlemap*/
+  /*googlemap*/
 
-#map {
-  width: 100%;
-  height: 300px;
-}
+  #map {
+    width: 100%;
+    height: 300px;
+  }
 
-.container {
-  margin: 70px auto 70px auto;
-  /* box-sizing: border-box; */
-}
+  .container {
+    margin: 70px auto 70px auto;
+    /* box-sizing: border-box; */
+  }
 
-.row {
-  background-color: aquamarine;
-}
+  /* .row {
+    background-color: aquamarine;
+  } */
 
 .contentsWrap {
   text-align: center;
 }
 
-.card {
-  width: auto;
-  margin-top: 30px;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px #ccc;
-}
+  .card {
+    width: auto;
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px #ccc;
+  }
+ .card-body .card-title {
+    height: 100px;
+    font-size: 30px;
+    color: #333;
+ }
+  
+  .card-text {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5;
+  }
 
-.card-title {
-  font-size: 30px;
-  color: #333;
-}
-.card-text {
-  color: #fff;
-  font-size: 30px;
-  line-height: 1.5;
-}
-
-.menu_title {
-  text-align: center;
-  /* max-width: 13.75em; */
-  margin: 0;
-  padding: 0;
-  color: #000;
-  font-weight: 100;
-  font-size: 2em;
-}
+  .menu_title {
+    text-align: center;
+    /* max-width: 13.75em; */
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-weight: 100;
+    font-size: 2em;
+  }
 
 .main_menu {
   padding-top: 0;
   font-size: 3em;
   text-align: center;
 }
-
-dt {
+*/ dt {
   font-weight: 200;
   font-size: 20px;
 }
@@ -470,7 +472,6 @@ dd {
   margin-top: 5px;
 }
 
-
 /* .jumbotron-fluid {
   position: relative;
   height: 522px;
@@ -495,16 +496,16 @@ dd {
 
 .jumbotron-container {
   position: relative;
-  top: 100%;
-  transform: translateY(-50%);
+  /* top: 90%; 
+  transform: translateY(-50%);*/
 }
 
 h1.site-name {
   font-family: "Roboto", arial, sans-serif;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   color: #fff;
-text-shadow: 2px 2px 10px #222121, -2px 2px 10px #222121,
+  text-shadow: 4px 4px 10px #222121, -2px 2px 10px #222121,
     2px -2px 10px #222121, -2px -2px 10px #222121;
 }
 
