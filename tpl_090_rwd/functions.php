@@ -152,4 +152,11 @@ if(!function_exists('_log')){
   }
 }
 
+
+// apply_filters( 'walker_nav_menu_start_el', string $item_output, WP_Post $item, int $depth, stdClass $args )
+add_filter('walker_nav_menu_start_el', 'add_class_on_link', 10, 4);
+ function add_class_on_link($item_output, $item){
+ return preg_replace('/(<a.*?)/', '$1' . " class='nav-link'", $item_output);
+}
+
 ?>

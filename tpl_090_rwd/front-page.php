@@ -50,10 +50,7 @@
                     <div class="mask rgba-white-slight"></div>
                 </a>
             </div>
-
         </div>
-
-
         <!--Grid column-->
         <div class="col-md-8 mb-9">
             <i class="fas fa-seedling fa-2x" id="icon"></i>
@@ -71,7 +68,6 @@
 
         </div>
         <!--Grid column-->
-
     </div>
     <!--Grid row-->
 </div>

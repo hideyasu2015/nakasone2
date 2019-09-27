@@ -58,21 +58,37 @@ wp_head(); ?>
 
         <!-- globalNavi -->
         <div class="container">
-            <nav class="navbar  navbar-expand-lg navbar-dark  light-green">
-                <!-- <a class="navbar-brand" href="http://parnee-noodle-shop.local/">HOME</a> -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-md navbar-light ">
+                <a class="navbar-brand" href="#"><img alt="Navbar"
+                        src="<?php bloginfo('template_directory'); ?>/images/navbar.jpeg" width="30" height="30"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse justify-content-center navbar-collapse " id="navbarNav">
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <?php 
                         $args=array(
                             'menu'=>'global-navigation',
                             'container'=>false,
+                            'items_wrap' => '<ul id="%1$s" class="%2$s navbar-nav">%3$s</ul>',
+                            // 'items_wrap' => '<ul id="%1$s" class="%2$s navbar-nav mr-auto">%3$s</ul>',
                         );
                         wp_nav_menu($args);
                         ?>
+                    <!-- <ul class="navbar-nav mr-auto">
+                        <li class="c active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        
+                    </ul> -->
+
                 </div>
             </nav>
+
         </div>
     </header>
