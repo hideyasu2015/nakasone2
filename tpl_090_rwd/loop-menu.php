@@ -28,14 +28,16 @@ $posts_array = get_posts( $args ); ?>
         <?php foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
         <div class="col-md-4">
             <div class="card">
-                <div class="card-img-top"><?php echo get_the_post_thumbnail($page->ID, 'medium'); ?>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title"><?php the_title();?></h5>
-                    <p class="card-text text-muted">
-                        <h4><?php echo number_format( get_field('price')); ?>b</h4>
-                    </p>
-                </div>
+                <a href="<?php the_permalink() ?>">
+                    <div class="card-img-top"><?php echo get_the_post_thumbnail($page->ID, 'large'); ?>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><?php the_title();?></h5>
+                        <p class="card-text text-muted">
+                            <h4><?php echo number_format( get_field('price')); ?>b</h4>
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
         <?php endforeach;

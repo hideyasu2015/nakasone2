@@ -59,7 +59,7 @@ wp_head(); ?>
         <!-- globalNavi -->
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light ">
-                <a class="navbar-brand" href="#"><img alt="Navbar"
+                <a class="navbar-brand" href="https://noodle.nakamiwa.com"><img alt="Navbar"
                         src="<?php bloginfo('template_directory'); ?>/images/navbar.jpeg" width="30" height="30"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -67,7 +67,7 @@ wp_head(); ?>
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                     <?php 
                         $args=array(
                             'menu'=>'global-navigation',

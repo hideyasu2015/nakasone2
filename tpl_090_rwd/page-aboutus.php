@@ -17,7 +17,7 @@
                     <p>I am the first owner.
                         <p>
                             <div class="item">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/gm.png" class="d-block w-100"
+                                <img src="<?php bloginfo('template_directory'); ?>/images/gm.jpg" class="d-block w-100"
                                     alt="...">
                             </div>
                 </div>
@@ -61,7 +61,7 @@
                         cheap, tasty and popular.</p>
 
                     <div class="item">
-                        <img src="<?php bloginfo('template_directory'); ?>/images/obachan.png" class="d-block w-100"
+                        <img src="<?php bloginfo('template_directory'); ?>/images/obachan.jpg" class="d-block w-100"
                             alt="...">
                     </div>
                 </div>

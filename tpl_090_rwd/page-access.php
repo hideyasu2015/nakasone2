@@ -3,13 +3,14 @@
 
 
 <div class="container">
-
+    <h1 class="main_menu"><?php the_title(); ?></h1>
     <div class="row">
         <!-- <div class="col-md-2">
         </div> -->
         <div class="col-md-6">
-            <h1 class="main_menu"><?php the_title(); ?></h1>
+
             <h3>Nong Hoi, Muang Thien Mai 50000 Thailand</h3>
+            <h3>It is open from 11:00 to 16:00.</h3>
         </div>
         <div class="col-md-6">
             <div id="map"></div>

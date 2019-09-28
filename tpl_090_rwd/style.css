@@ -4,8 +4,8 @@ Theme Name: tpl_090_rwd
 Theme URI: http://f-tpl.com/
 Description: tpl_090_rwd
 Version: 1.0
-Author: f-tpl
-Author URI: http://f-tpl.com/
+Author: nakasone
+Author URI: https://noodle.nakamiwa.com
 Tags: simple
 
 	f-tpl v1.0
@@ -133,47 +133,23 @@ input:focus {
   transform: scale(0.5);
 }
 
-
-.navbar  {
- padding:8px 30px 8px 30px;
+.navbar {
+  padding: 8px 30px 8px 40px;
   /* padding:8px 30px 8px 80px; */
 }
-.nav-item{
-  margin: 0 30px 0 30px;
+.nav-item {
+  margin: 0 1.3em 0 1.3em;
   font-size: 1.5em;
 }
-/* 
-#navbar  {
-  display: flex;
-  justify-content: space-around;
-  max-width: 100%;
-  background-color: #3f903f;
-}
 
-#navbarNavi  ul li a {
-  display: block;
-  box-sizing: border-box; 
-  padding: 6px 40px;
+.nav-link {
   color: #000;
-  font-family: "Noto Sans JP", serif;
-  font-size: 40px;
-}  */
-
-/* .globalNavi ul {
-  display: flex;
-  justify-content: space-around;
-  max-width: 100%;
-  background-color: #3f903f;
+  text-decoration: none;
 }
-
-.globalNavi ul li a {
-  display: block;
-  box-sizing: border-box;
-  padding: 6px 40px;
-  color: #000;
-  font-family: "Noto Sans JP", serif;
-  font-size: 40px;
-} */
+.nav-link:hover,
+.active {
+  text-decoration: underline;
+}
 
 /* フッター
 ------------------------------------------------------------*/
@@ -190,6 +166,11 @@ h1,
 h2 {
   font-family: "Noto Sans JP", serif;
 }
+
+#timeline h1 {
+  text-align: center;
+}
+
 h2 {
   position: relative;
   padding: 0.25em 0;
@@ -209,6 +190,7 @@ h2:after {
 h3 {
   font-size: 120%;
   padding: 30px 0 30px 0;
+  text-align: center;
 }
 
 img {
@@ -220,120 +202,84 @@ img {
 ------------------------------------------------------------*/
 
 @media only screen and (max-width: 2500px) {
+}
 
-   /* .menu {
-    display: flex;
-    justify-content: space-around;
-    max-width: 100%;
-  }
-.menu a{
-   font-size: 3em;
-   margin-left: 2em;
- } */
-  /* 
-  .globalNavi ul li a {
-    display: block;
-    box-sizing: border-box;
-    align-items: stretch;
-    color: #000;
-    font-family: "Noto Sans JP", serif;
-    font-size: 30px;
-  } */
+@media only screen and (min-width: 769px) {
+}
 
-  @media only screen and (min-width: 769px) {
-   /*  .menu {
-      display: flex;
-      justify-content: space-around;
-      max-width: 100%;
-    }
+/*googlemap*/
 
-     .menu a{
-   font-size: 2em;
-   margin-left: 1em;
- } */
-    /* #navbarNav ul li a {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 10px;
-    color: #000;
-    font-family: "Noto Sans JP", serif;
-    font-size: 10px;
-  } */
+#map {
+  width: 100%;
+  height: 300px;
+  margin-top: 30px;
+}
 
-    /* .navbar-toggler {
-    margin-top: 10px;
-  } */
-  }
-
-  /*googlemap*/
-
-  #map {
-    width: 100%;
-    height: 300px;
-    margin-top: 30px;
-  }
-
-  .container {
-    margin: 70px auto 70px auto;
-    /* box-sizing: border-box; */
-  }
-
-  /* .row {
-    margin-top: 30px;
-  } */
+.container {
+  margin: 70px auto 70px auto;
+  /* box-sizing: border-box; */
+}
 
 .contentsWrap {
   text-align: center;
 }
 
-  .card {
-    width: auto;
-    margin-top: 30px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 3px 10px #ccc;
-  }
- .card-body .card-title {
-    height: 100px;
-    font-size: 30px;
-    color: #333;
- }
-  
-  .card-text {
-    color: #fff;
-    font-size: 30px;
-    line-height: 1.5;
-  }
+.card {
+  width: auto;
+  margin-top: 30px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px #ccc;
+}
+.card-body .card-title {
+  height: 100px;
+  font-size: 30px;
+  color: #000;
+}
 
-  .menu_title {
-    text-align: center;
-    /* max-width: 13.75em; */
-    margin: 0;
-    padding: 0;
-    color: #000;
-    font-weight: 100;
-    font-size: 2em;
-  }
+.card-text {
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.menu_title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-weight: 100;
+  font-size: 2em;
+}
 
 .main_menu {
-  padding-top: 0;
+  margin-bottom: 40px;
   font-size: 3em;
   text-align: center;
 }
-*/ dt {
+
+dl {
+  margin-top: 30px;
+  height: 70px;
+}
+dt {
   font-weight: 200;
   font-size: 20px;
 }
 
 dd {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 30px;
 }
 
 .postNavi {
   font-size: 20px;
 }
 
+#timeline {
+  text-align: center;
+  margin-bottom: 70px;
+}
 .timeline {
   list-style: none;
   padding: 20px 0 20px;
@@ -552,4 +498,3 @@ h1.site-name {
 .fas {
   margin-top: 10px;
 }
-
