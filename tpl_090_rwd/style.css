@@ -198,17 +198,24 @@ img {
   height: auto;
 }
 
+/* .img-fluid {
+  max-width: 100%;
+} */
+
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
 
-@media only screen and (max-width: 2500px) {
-}
+/* @media only screen and (max-width: 2500px) {
+} */
 
-@media only screen and (min-width: 769px) {
-}
+/* @media (min-width: 768px) {
+  .row {
+    display: flex;
+    align-items: center;
+  }
+} */
 
 /*googlemap*/
-
 #map {
   width: 100%;
   height: 300px;
@@ -217,11 +224,15 @@ img {
 
 .container {
   margin: 70px auto 70px auto;
-  /* box-sizing: border-box; */
 }
 
 .contentsWrap {
   text-align: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
 }
 
 .card {
@@ -253,7 +264,6 @@ img {
 }
 
 .main_menu {
-  margin-bottom: 40px;
   font-size: 3em;
   text-align: center;
 }
@@ -427,20 +437,6 @@ dd {
 .timeline-body > p + p {
   margin-top: 5px;
 }
-
-/* .jumbotron-fluid {
-  position: relative;
-  height: 522px;
-  min-height: 100px;
-  background: url("images/noodleshop.jpg") no-repeat center center;
-  background-size: cover;
-}
-
-.jumbotron-container {
-  position: relative;
-  top: 90%;
-  transform: translateY(-50%);
-} */
 
 .jumbotron-fluid {
   position: relative;

@@ -60,12 +60,11 @@
             <p>Once eaten, it tastes delicious!! Enjoy yourself on the open terrace.</p>
             <p>Pad Thai is a noodle dish loved by Thai people, from adults to children. Pad Thai with peanuts is a
                 typical Thai dish that is fried with chicken, dried shrimp, deep-fried chicken, sprouts and other
-                ingredients, seasoned with nampula, sugar, tamarind, etc. . Thai people eat this pad Thai like a snack
+                ingredients, seasoned with nampula, sugar, tamarind, etc. . Thai people eat this pad Thai like a
+                snack
                 or snack.</p>
-            <h3>It is open from 11:00 to 16:00.</h3>
             <a href="<?php echo get_permalink(13); ?>"><button type="button" class="btn btn-light-green">Read
                     More</button></a>
-
         </div>
         <!--Grid column-->
     </div>
@@ -85,6 +84,7 @@
     <div class="row">
         <div class="col-md-6">
             <h3>Nong Hoi, Muang Thien Mai 50000 Thailand</h3>
+            <h3>It is open from 11:00 to 16:00.</h3>
         </div>
         <div class="col-md-6">
             <div id="map"></div>
@@ -112,8 +112,6 @@
         </div>
     </div>
 </div>
-
-
 
 
 <?php get_footer(); ?>
